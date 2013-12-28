@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "OpenCV"
   s.version      = "2.4.6"
-  s.summary      = "OpenCV (Computer Vision) for iOS."
-  s.homepage     = "https://github.com/Fl0p/OpenCV-iOS"
+  s.summary      = "OpenCV (Computer Vision) for OS X."
+  s.homepage     = "https://github.com/niklassaers/OpenCV-iOS"
   s.description  = <<-DESC
     OpenCV: open source computer vision library
 
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     Q&A forum:   http://answers.opencv.org
     Dev zone:    http://code.opencv.org
 
-    Just compiled iOS framework version #{s.version}
+    Just compiled OS X framework version #{s.version}
     Also available for downloading here - http://sourceforge.net/projects/opencvlibrary/files/opencv-ios/
     .
               DESC
@@ -61,11 +61,11 @@ Pod::Spec.new do |s|
   s.author       = "opencv.org"
 
   s.source       = { 
-    :git => "https://github.com/Fl0p/OpenCV-iOS.git", 
+    :git => "https://github.com/niklassaers/OpenCV-iOS.git", 
     :tag => "#{s.version}"
   }
 
-  s.platform     = :ios
+  s.platform     = :osx
 
   s.preserve_paths = 'opencv2.framework'
   
